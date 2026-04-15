@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #2a0a4a, #0b021a 70%);
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+header h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #a855f7;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 60px;
+  gap: 80px;
+}
+
+.photo-card {
+  padding: 15px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #3b0d6b, #1a0333);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
+}
+
+.photo-card img {
+  width: 300px;
+  border-radius: 10px;
+  display: block;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.hero-text h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  line-height: 1.6;
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+.socials a {
+  font-size: 22px;
+  color: white;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #a855f7;
+  transform: translateY(-3px);
+}
+
+.skills {
+  padding: 120px 60px;
+  text-align: center;
+  background: linear-gradient(180deg, transparent, #140526);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.8s;
+}
+
+.skills h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.skills p {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.skills-icons {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.skills-track {
+  display: flex;
+  gap: 50px;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.skills-track i {
+  font-size: 50px;
+  color: #ddd;
+  transition: 0.3s;
+}
+
+.skills-track i:hover {
+  color: #a855f7;
+  transform: scale(1.2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .photo-card img {
+    width: 250px;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  nav {
+    display: none;
+  }
+}
