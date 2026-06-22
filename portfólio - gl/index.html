@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gabriela Lima — Desenvolvedora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav id="navbar">
+  <a class="nav-logo" href="#hero">GL.</a>
+  <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#skills"       onclick="closeMenu()">Skills</a></li>
+    <li><a href="#timeline"     onclick="closeMenu()">Trajetória</a></li>
+    <li><a href="#projects"     onclick="closeMenu()">Projetos</a></li>
+    <li><a href="#certs"        onclick="closeMenu()">Certificados</a></li>
+    <li><a href="#contact"      onclick="closeMenu()">Contato</a></li>
+  </ul>
+</nav>
+
+<div class="menu-overlay" id="menu-overlay" onclick="closeMenu()"></div>
+
+<section id="hero">
+  <canvas id="particles"></canvas>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <div class="hero-badge"><span class="badge-dot"></span> Disponível para oportunidades</div>
+
+  <div class="hero-photo-wrap">
+    <img src="image.png" alt="Gabriela Lima">
+  </div>
+
+  <h1 class="hero-name">Gabriela Lima</h1>
+  <p class="hero-role">Desenvolvedora &amp; UI/UX · Recife, PE</p>
+  <p class="hero-desc">
+    Apaixonada por criar soluções digitais que unem funcionalidade, organização e design.
+    Interesse em UI/UX, dados e gestão de projetos — transformando ideias em interfaces
+    modernas e intuitivas.
+  </p>
+  <div class="hero-btns">
+    <a class="btn-primary" href="#projects">Ver projetos</a>
+    <a class="btn-outline" href="#contact">Entrar em contato</a>
+  </div>
+</section>
+
+
+<section id="skills">
+  <div class="reveal">
+    <p class="section-label">Tecnologias</p>
+    <h2 class="section-title">Skills</h2>
+    <p class="section-sub">Ferramentas e tecnologias que utilizo no dia a dia para criar soluções completas.</p>
+  </div>
+  <div class="skills-grid reveal">
+    <div class="skill-cat">
+      <h4>Front-end</h4>
+      <div class="skill-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">React</span>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <h4>Mobile</h4>
+      <div class="skill-tags">
+        <span class="tag">Flutter</span>
+        <span class="tag">Dart</span>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <h4>Back-end &amp; Dados</h4>
+      <div class="skill-tags">
+        <span class="tag">Java</span>
+        <span class="tag">SQL</span>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <h4>Design &amp; UX</h4>
+      <div class="skill-tags">
+        <span class="tag">Figma</span>
+        <span class="tag">Canva</span>
+        <span class="tag">UI/UX</span>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <h4>Ferramentas</h4>
+      <div class="skill-tags">
+        <span class="tag">Git &amp; GitHub</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="timeline">
+  <div class="reveal">
+    <p class="section-label">Trajetória</p>
+    <h2 class="section-title">Linha do Tempo</h2>
+    <p class="section-sub">Uma jornada de descobertas, desafios e evolução constante.</p>
+  </div>
+  <div class="tl-wrap">
+    <div class="tl-item reveal">
+      <div class="tl-dot">24</div>
+      <div class="tl-content">
+        <div class="tl-year">2024 — Início</div>
+        <div class="tl-text">
+          Ingressei no <strong>ensino médio técnico em ADS no Senac</strong>, sem grande interesse inicial.
+          Primeiro contato com lógica de programação, POO, requisitos e gestão de projetos.
+        </div>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-dot">24</div>
+      <div class="tl-content">
+        <div class="tl-year">2024 — Descoberta</div>
+        <div class="tl-text">
+          Através das <strong>Aulas e do Projeto Integrador</strong> descobri o interesse por
+          <strong>design e UI/UX</strong>. Primeiras experiências com HTML, CSS, JavaScript, Figma e GitHub.
+        </div>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-dot">25</div>
+      <div class="tl-content">
+        <div class="tl-year">2025 — Evolução</div>
+        <div class="tl-text">
+          Projetos mais estruturados com <strong>JAVA, APIs, CRUD e banco de dados</strong>.
+          Destaque para o projeto <strong>SENZ</strong> e participação em hackathons e competições.
+        </div>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-dot">26</div>
+      <div class="tl-content">
+        <div class="tl-year">2026 — Em andamento</div>
+        <div class="tl-text">
+          Continuando o aprendizado, <strong>agora com o foco em gestão, dados e design. </strong> Construindo projetos e explorando novas tecnologias.
+          <strong>Aberta a novas oportunidades.</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="reveal">
+    <p class="section-label">Portfólio</p>
+    <h2 class="section-title">Projetos</h2>
+    <p class="section-sub">Soluções criadas em diferentes contextos — desde hackathons até iniciativas pessoais.</p>
+  </div>
+  <div class="proj-grid">
+
+    <div class="proj-card reveal">
+      <div class="proj-top">
+        <div class="proj-name">LGPD na Prática</div>
+        <span class="proj-badge badge-academico">🎓 Acadêmico</span>
+      </div>
+      <p class="proj-desc">Plataforma educativa que conscientiza usuários e empresas sobre proteção de dados pessoais, promovendo segurança, transparência e controle de informações de acordo com a LGPD.</p>
+      <div class="proj-footer">
+        <!-- Substitua o href="#" pela URL do projeto -->
+        <a class="proj-link" href="#" target="_blank" aria-label="Acessar projeto LGPD na Prática">
+          Acessar projeto <span class="proj-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="proj-card reveal">
+      <div class="proj-top">
+        <div class="proj-name">SENZ</div>
+        <span class="proj-badge badge-academico">🎓 Acadêmico</span>
+      </div>
+      <p class="proj-desc">Dispositivo vestível que monitora sinais emocionais em tempo real e oferece intervenções personalizadas, promovendo bem-estar contínuo com total privacidade.</p>
+      <div class="proj-footer">
+        <a class="proj-link" href="#" target="_blank" aria-label="Acessar projeto SENZ">
+          Acessar projeto <span class="proj-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="proj-card reveal">
+      <div class="proj-top">
+        <div class="proj-name">R.U.M.O</div>
+        <span class="proj-badge badge-academico">🎓 Acadêmico</span>
+      </div>
+      <p class="proj-desc">Plataforma inteligente que integra dados de saúde, clima, segurança e território para prever riscos, gerar alertas e apoiar decisões rápidas na gestão municipal.</p>
+      <div class="proj-footer">
+        <a class="proj-link" href="#" target="_blank" aria-label="Acessar projeto R.U.M.O">
+          Acessar projeto <span class="proj-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="proj-card reveal">
+      <div class="proj-top">
+        <div class="proj-name">AutoLance</div>
+        <span class="proj-badge badge-competicao">🏆 Competição</span>
+      </div>
+      <p class="proj-desc">Solução de robótica colaborativa que automatiza a limpeza de fornos industriais, reduzindo riscos operacionais e aumentando a segurança dos trabalhadores.</p>
+      <div class="proj-footer">
+        <a class="proj-link" href="#" target="_blank" aria-label="Acessar projeto AutoLance">
+          Acessar projeto <span class="proj-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="proj-card reveal">
+      <div class="proj-top">
+        <div class="proj-name">Acende PE</div>
+        <span class="proj-badge badge-hackathon">⚡ Hackathon</span>
+      </div>
+      <p class="proj-desc">Plataforma que conecta artistas, espaços culturais e territórios, facilitando a circulação da produção cultural em Pernambuco por meio de tecnologia e logística inteligente.</p>
+      <div class="proj-footer">
+        <a class="proj-link" href="#" target="_blank" aria-label="Acessar projeto Acende PE">
+          Acessar projeto <span class="proj-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="proj-card reveal">
+      <div class="proj-top">
+        <div class="proj-name">Soully</div>
+        <span class="proj-badge badge-personal">💡 Pessoal</span>
+      </div>
+      <p class="proj-desc">Aplicativo gratuito de bem-estar menstrual com IA empática para apoio emocional e físico personalizado, promovendo autocuidado e autoconhecimento em todas as fases do ciclo.</p>
+      <div class="proj-footer">
+        <a class="proj-link" href="#" target="_blank" aria-label="Acessar projeto Soully">
+          Acessar projeto <span class="proj-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="certs">
+  <div class="reveal">
+    <p class="section-label">Formação</p>
+    <h2 class="section-title">Certificados</h2>
+    <p class="section-sub">Capacitações que fortalecem minhas competências em tecnologia, design e inovação. <strong>Clique para visualizar.</strong> </p>
+  </div>
+
+  <div class="certs-group reveal">
+    <h3>Cisco</h3>
+    <div class="certs-list">
+
+      <a class="cert-item" href="introduçãoacibersegurança.pdf" target="_blank">
+        <span>Introdução à Cibersegurança</span>
+        <span class="cert-arrow">→</span>
+      </a>
+      <a class="cert-item" href="gerenciamentodeameaçasciberneticas.pdf" target="_blank">
+        <span>Gerenciamento de Ameaças Cibernéticas</span>
+        <span class="cert-arrow">→</span>
+      </a>
+      <a class="cert-item" href="defesaderede.pdf" target="_blank">
+        <span>Defesa de Rede</span>
+        <span class="cert-arrow">→</span>
+      </a>
+      <a class="cert-item" href="fundamentosdohardwaredocomputador.pdf" target="_blank">
+        <span>Fundamentos do Hardware do Computador</span>
+        <span class="cert-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="certs-group reveal">
+    <h3>Orango</h3>
+    <div class="certs-list">
+      <a class="cert-item" href="https://cursos-orango.senac.br/pluginfile.php/1/tool_certificate/issues/1779892164/7034925600GL.pdf" target="_blank">
+        <span>IAs Visuais para Prototipação</span>
+        <span class="cert-arrow">→</span>
+      </a>
+      <a class="cert-item" href="https://cursos-orango.senac.br/pluginfile.php/1/tool_certificate/issues/1781015115/0663037506GL.pdf" target="_blank">
+        <span>Design Thinking: Criando Soluções Inovadoras com Foco no Usuário</span>
+        <span class="cert-arrow">→</span>
+      </a>
+      <a class="cert-item" href="https://cursos-orango.senac.br/pluginfile.php/1/tool_certificate/issues/1779891525/5585463442GL.pdf" target="_blank">
+        <span>Da Ideia ao Protótipo: Validação Rápida para Empreendedores</span>
+        <span class="cert-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact">
+  <div class="reveal">
+    <p class="section-label">Vamos conversar</p>
+    <h2 class="section-title">Contato</h2>
+    <p class="section-sub">Seja para um projeto, oportunidade ou só para trocar uma ideia -
+        <strong>Estou por aqui!</strong> </p>
+  </div>
+  <div class="contact-links reveal">
+    <a class="contact-link" href="mailto:gabirielaestudos010209@gmail.com">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+      E-mail
+    </a>
+    <a class="contact-link" href="https://www.linkedin.com/in/gabrielalimaale/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+      LinkedIn
+    </a>
+    <a class="contact-link" href="https://github.com/eugabilima" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+      GitHub
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>Feito por Gabriela Lima · 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
